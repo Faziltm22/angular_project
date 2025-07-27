@@ -1,6 +1,8 @@
 import { provideZonelessChangeDetection } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
 import { App } from './app';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+
 
 describe('App', () => {
   beforeEach(async () => {
@@ -9,6 +11,7 @@ describe('App', () => {
       providers: [provideZonelessChangeDetection()]
     }).compileComponents();
   });
+  
 
   it('should create the app', () => {
     const fixture = TestBed.createComponent(App);

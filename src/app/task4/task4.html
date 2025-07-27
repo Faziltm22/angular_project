@@ -1,0 +1,41 @@
+
+<div class="Task">
+  <a href="">Task 1</a>
+  <a href="2">Task 2</a>
+  <a href="3">Task 3</a>
+  <a href="4">Task 4</a>
+</div>
+
+
+
+
+
+
+
+
+<div class="bg">
+  <div class="noch"></div>
+  
+  <!-- Add this section to display selected icon name -->
+<div class="bottom-bar">
+  <div
+    class="tab"
+    *ngFor="let icon of icons; let i = index"
+    [ngStyle]="activeIndex === i ? {
+        'color': color[i],
+        
+        'font-weight': 'bold'
+      } : {}"
+    [class.active]="activeIndex === i"
+    (click)="selectTab(i)"
+  >
+    <div class="tab-content">
+      <i class="fas fa-{{ icon }}"></i>
+      <span *ngIf="activeIndex === i">{{ labels[i] }}</span>
+    </div>
+  </div>
+</div>
+
+  
+  <div class="line"></div>
+</div>

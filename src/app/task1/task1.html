@@ -1,0 +1,32 @@
+
+<div class="Task">
+  <a href="">Task 1</a>
+  <a href="2">Task 2</a>
+  <a href="3">Task 3</a>
+  <a href="4">Task 4</a>
+</div>
+
+
+<div class="bg">
+    <div class="noch"></div>
+    <div class="bot">
+    <div class="icons">
+      <i 
+        *ngFor="let icon of icons; let i = index" 
+        class="fas fa-{{icon}}"
+        [class.active]="activeIndex === i"
+        (click)="selectTab(i)"
+      ></i>
+    </div>
+   
+    <div 
+      class="indicator"
+      [style.transform]="'translateX(' + indicatorPositions[activeIndex] + 'px)'"
+    ></div>
+  </div>
+    <div class="line"></div>
+
+
+
+</div>
+

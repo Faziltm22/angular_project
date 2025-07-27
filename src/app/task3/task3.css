@@ -1,0 +1,219 @@
+.Task {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; 
+  width: 100px;             /* Space between buttons */       /* Wrap on smaller screens */
+  margin-top: 20px;
+  position: absolute;
+}
+
+.Task a {
+  text-decoration: none;
+  background-color: #116dc2;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Task a:hover {
+  background-color: #0d4d91;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.bg {
+  position: relative;
+  background-color: rgb(83, 86, 100);
+  height: 600px;
+  width: 330px;         
+  max-width: none;       
+  margin: auto;
+  border-radius: 40px;
+   transition: height 0.2s ease-in;
+  /* top: 20px; */
+}
+.noch{
+    position: relative;
+    width: 110px;
+    background: #000;
+    height: 32px;
+    margin: auto;
+    top: 15px;
+    border-radius: 40px;
+}
+.bot {
+  position: absolute; 
+  background: rgb(44, 44, 48);
+  width: 330px;
+  height: 70px;
+  bottom: 0px;           
+  left: 0;
+  right: 0;
+  border-radius: 0px 0px 40px 40px;
+  margin: auto;        
+}
+.line{
+    position: absolute;
+    background:white;
+    width: 100px;
+    height: 4px;
+    border-radius: 50px;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.icons i{
+    position: relative;
+    margin: 19px;
+    left: 12px;
+    top: -10px;
+    color: aliceblue;
+    z-index: 100;
+    &.active {
+    color: #1f1e1e;
+  }
+}
+.iname{
+    font-size: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.ic{
+  background-color: #5f5959b3;
+  padding: 10px;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+}
+
+.small-arrow {
+  font-size: 20px;
+  transition: font-size 0.3s ease;
+}
+
+.big-arrow {
+  font-size: 40px;
+  transition: font-size 0.3s ease;
+}
+
+
+.cn1 ,.cn2,.cn3{
+  position: absolute;
+  background-color: rgb(241, 245, 245);
+  width: 35px;
+  height: 35px;
+  border-radius: 7px;
+  bottom: 20px;
+  right: -2px;
+  transition: 0.3s;
+  span{
+    display: none;
+  }
+
+}
+
+.cn2{
+  bottom: 32px;
+  background-color: rgb(181, 179, 179);
+  height: 30px;
+  width: 30px;
+  left: 8px;
+  z-index: -1;
+  span{
+    display: none;
+  }
+}
+.cn3{
+  bottom: 40px;
+  z-index: -2;
+  background-color: rgb(150, 145, 145);
+  width: 25px;
+  height: 25px;
+  right: 7px;
+  position: absolute; 
+  span{
+    display: none;
+  }
+}
+
+.cn3.active-style {
+  background-color: rgb(255, 255, 255);
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  bottom: 180px; 
+  right: 30px;
+  left: 0;
+  span{
+    display: block;
+  }
+}
+.cn2.active-style{
+  background-color: white;
+  bottom: 120px;
+  width: 40px;
+  height: 40px;
+  left: 0;
+  span{
+    display: block;
+  }
+}
+.bg.active-style{
+  height: 640px;
+}
+
+.cn1.active-style {
+    width: 40px !important;
+    height: 40px;
+    left: 1px;
+    bottom: 60px;
+    span{
+      display: block;
+    }
+}
+
+.cn1 i.active-style{
+  top: 3px;
+}
+.cn1 i,.cn2 i,.cn3 i {
+  color: #000;
+  position: absolute;
+  left: -12px;
+}
+.cn1.active-style i,
+.cn2.active-style i,
+.cn3.active-style i {
+  position: absolute;
+  left: -10px;
+  top: -7px;
+}
+
+.cn1 span,
+.cn2 span,
+.cn3 span{
+  position: absolute;
+  top: 44px;
+  font-size: 8px;
+  left: -10px;
+
+}
+
+

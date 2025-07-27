@@ -1,0 +1,93 @@
+.Task {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; 
+  width: 100px;             /* Space between buttons */       /* Wrap on smaller screens */
+  margin-top: 20px;
+  position: absolute;
+}
+
+.Task a {
+  text-decoration: none;
+  background-color: #116dc2;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Task a:hover {
+  background-color: #0d4d91;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.bg {
+  position: relative;
+  background-color: brown;
+  height: 600px;
+  width: 330px;          /* Fixed width (e.g., iPhone size) */
+  max-width: none;       /* Remove max-width restriction */
+  margin: auto;
+  border-radius: 40px;
+  top: 30px;
+}
+.noch{
+    position: relative;
+    width: 110px;
+    background: #000;
+    height: 32px;
+    margin: auto;
+    top: 15px;
+    border-radius: 40px;
+}
+.bot {
+  position: absolute; 
+  background: transparent;
+  width: 320px;
+  height: 64px;
+  bottom: 24px;           
+  left: 0;
+  right: 0;
+  border-radius: 40px;
+  margin: auto;        
+}
+.line{
+    position: absolute;
+    background:white;
+    width: 100px;
+    height: 4px;
+    border-radius: 50px;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.icons i{
+    position: relative;
+    margin: 19px;
+    left: 12px;
+    top: 5px;
+    color: aliceblue;
+    z-index: 100;
+    &.active {
+    color: #000000;
+  }
+}
+
+.indicator {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: rgb(251, 226, 5);
+  border-radius: 50px;
+  bottom: 12px;
+  left: 20px;
+  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: 1;
+ 
+}

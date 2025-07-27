@@ -1,0 +1,43 @@
+
+<div class="Task">
+  <a href="">Task 1</a>
+  <a href="2">Task 2</a>
+  <a href="3">Task 3</a>
+  <a href="4">Task 4</a>
+</div>
+
+
+
+
+
+
+
+
+<div class="bg">
+  <div class="noch"></div>
+  <div class="bot">
+    <div class="icons">
+      <!-- Toggle Button -->
+      <div class="toggle-container">
+        <div class="toggle" (click)="toggleMenu()" [class.active]="isMenuOpen">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <!-- Circular Radial Menu -->
+<div *ngFor="let menus of menu; let i = index"
+     class="menu-item"
+     [ngStyle]="getItemStyle(i)"
+     (mouseenter)="hoveredIndex = i"
+     (mouseleave)="hoveredIndex = -1">
+  <i class="fas fa-{{ menus }}"></i>
+  <span class="menu-label">{{ names[i] }}</span>
+</div>
+
+      
+    </div>
+    <div class="line"></div>
+  </div>
+</div>

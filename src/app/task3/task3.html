@@ -1,0 +1,50 @@
+
+<div class="Task">
+  <a href="">Task 1</a>
+  <a href="2">Task 2</a>
+  <a href="3">Task 3</a>
+  <a href="4">Task 4</a>
+</div>
+
+
+
+
+
+
+<div class="bg" [ngClass]="isActive ? 'active-style' : ''">
+    <div class="noch"></div>
+    <div class="bot">
+    <div class="icons">
+      <i class="fa fa-star"><span class="iname">star</span></i>
+      <i class="fa fa-clock"><span class="iname">clock</span></i>
+      <i class="fa fa-keyboard"><span class="iname">keyboard</span></i>
+      <i class="fa fa-users"><span class="iname">users  </span></i>
+     <i 
+        class="fa ic" 
+        [ngClass]="isUp ? 'fa-	fa-chevron-up'  : 'fa-	fa-chevron-down'" 
+        (click)="toggleStyle()" 
+        style="cursor: pointer;"
+      >
+    <div class="cn1" [ngClass]="isActive ? 'active-style' : ''" (click)="toggleStyle()" style="cursor: pointer; "  >
+  <i class="fa fa-voicemail"></i> <span>  VOICEMAIL</span>
+</div>
+
+      <div class="cn2" [ngClass]="isActive ? 'active-style' : ''" ><i class="fa fa-microphone"></i><span>RECORDING</span> </div>
+      <div class="cn3" [ngClass]="isActive ? 'active-style' : ''"><i class="fa fa-archive"></i><span>&nbsp;&nbsp;&nbsp;&nbsp;ARCHIVE</span></div>
+      </i>
+    </div>
+    <div 
+      class="indicator"
+      [style.transform]="'translateX(' + indicatorPositions[activeIndex] + 'px)'"
+    ></div>
+  </div>
+
+
+
+  
+    <div class="line"></div>
+
+
+
+</div>
+
